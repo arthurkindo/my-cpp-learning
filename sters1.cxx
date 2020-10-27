@@ -69,8 +69,28 @@ void sters :: display_plus(){
 int main()
 {
 	sters row;
-	row.display_sters();
-	row.display_cross();
-	row.display_plus();
+				// creating a main menu
+				string tab = "\t\t";
+				int choise;
+do{
+	cout<<tab<<"Main Menu\n"
+	<<tab<<"1. Display all Sters.\n"
+	<<tab<<"2. Display Cross.\n"
+	<<tab<<"3. Display Plus.\n"
+	<<tab<<"4. Exit\n";
+	cout<<tab<<"Enter your choise(1-4) : ";
+	cin>>choise;
+	switch(choise){
+		case 1: row.display_sters();
+					  break;
+		case 2: row.display_cross();
+						break;
+		case 3: row.display_plus();
+						break;
+		case 4: return 0;
+		default: cout<<"Please enter a valid choise. (1-4).";
+	}
+}while(choise != 4);
 	return 0;
 }
+
