@@ -70,7 +70,7 @@ int main()
 {
 	sters row;
 				// creating a main menu
-				string tab = "\t\t";
+				string tab = "\t";
 				int choise;
 do{
 	cout<<tab<<"Main Menu\n"
@@ -91,6 +91,7 @@ do{
 		default: cout<<"Please enter a valid choise. (1-4).";
 	}
 }while(choise != 4);
+cout<<"Thank you for using our suvice"<<endl;
 	return 0;
 }
 
